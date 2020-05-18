@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Kalam:wght@300;400&family=Lato&family=Open+Sans&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="dummy-top"></div>
+    <header class="main-header">
+            <nav class="navigation">
+                <ul class="navigation-list">
+                <li class="navigation-list__link"><a href="index.html">Strona główna</a></li>
+                <li class="navigation-list__link--main"><a href="nauka-html.html">HTML</a></li>
+                <li class="navigation-list__link"><a href="nauka-css.html">CSS</a></li>
+                <li class="navigation-list__link"><a href="nauka-js.html">JavaScript</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="wrapper">
+        <section class="unit">
+            <h2 class="unit__title">HTML - szkielet projektu</h2>
+            <article class="unit-secondary">
+                <h3 class="unit-secondary__title">HyperText Markup Language</h3>
+                <p class="unit-secondary__paragraph">Jest to język znaczników, wykorzystywany do tworzenia dokumentów hipertekstowych. HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając odpowiednie znaczenie
+                    semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy – oraz
+                    osadza w tekście dokumentu obiekty plikowe np. multimedia bądź elementy baz danych np. interaktywne
+                    formularze danych.
+                    HTML umożliwia określenie wyglądu dokumentu w przeglądarce internetowej. Do szczegółowego opisu
+                    formatowania akapitów, nagłówków, użytych czcionek i kolorów, zalecane jest wykorzystywanie
+                    kaskadowych arkuszy stylów.</p>
+            </article>
+            <article class="unit-secondary">
+                <h3 class="unit-secondary__title">Jak stworzyć prawidłowego HTML-a?</h3>
+                <p class="unit-secondary__paragraph">Czy utworzenie działającego i przejrzystego dokumentu HTML jest łatwe? Tak.<br>
+                    A co z tworzeniem zgodnego ze standardami dokumentu HTML? Jak się okazuje,
+                    nie jest to taka banalna i popularna praktyka. Niezwykle ważne jest, aby zwrócić uwagę na poprawną
+                    semantykę, która ma znaczenie, ze względu na:
+                    <ul class="paragraph__list">
+                        <li>dostepność - czytniki ekranowe korzystają ze struktury HTML, aby ułatwić (lub w ogóle
+                            umożliwić)
+                            osobom korzystającym z technologii asystujących przyswajanie treści</li>
+                        <li>pozycjonowanie - roboty wyszukiwarek sieciowych, zbierające informacje o witrynach,
+                            czerpią informacje właśnie z prawidłowo użytych znaczników HTML. Semantycznie prawidłowy
+                            dokument wpływa więc bezpośrednio na wyższą pozycję twojej strony na liście wyszukiwania i
+                            jej popularność</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+        <section class="unit">
+            <h2 class="unit__title">Znaczniki HTML</h2>
+            <article class="unit-secondary">
+                <h3 class="unit-secondary__title">Semantyczne</h3>
+                <table class="html-table__body">
+                    <tbody class="html-table__body__body">
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">html</td>
+                        <td class="html-table__body__definition">sekcja definiująca stronę - element nadrzędny</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">head</td>
+                        <td class="html-table__body__definition">ogólne informacje (metadane) na temat dokumentu: tytuł, odnośniki do skryptu i arkuszy</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">meta</td>
+                        <td class="html-table__body__definition">metadane, które nie mogą być reprezentowane przez inne elementy związane z HTML</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">body</td>
+                        <td class="html-table__body__definition">definicja</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">main</td>
+                        <td class="html-table__body__definition">akapit tekstu</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">section</td>
+                        <td class="html-table__body__definition">tematyczna grupa treści, np. rozdziały pracy badawczej</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">article</td>
+                        <td class="html-table__body__definition">samodzielna treść dokumentu lub aplikacji (np. wiadomość na forum, wpis na blogu, widget).</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">header</td>
+                        <td class="html-table__body__definition">definiuje pojemnik na nagłówek dokumentu lub sekcji</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">footer</td>
+                        <td class="html-table__body__definition">stopka dla strony lub wybranego elementu, np. article, aside, nav, section</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">nav</td>
+                        <td class="html-table__body__definition">zawiera odnośniki nawigadyjne do innych stron lub określonych fragmentów na tej samej stronie</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">aside</td>
+                        <td class="html-table__body__definition">wstawka, będąca nieznacznie powiązana tematycznie z treścią elementu, w którym się znajduje</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">h1-h6</td>
+                        <td class="html-table__body__definition">Nagłówki z numerem od 1 do 6, oznaczającym hierarchię zawartości; Na stronie może znajdować się tylko 1 nagłówek h1</td>
+                    </tr>
+                </tbody>
+                </table>
+            </article>
+            <article class="unit-secondary">
+                <h3 class="unit-secondary__title">Generyczne (ogólne)</h3>
+                <table class="html-table__body">
+                    <tbody>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">div</td>
+                        <td class="html-table__body__definition">niesemantyczny element blokowy, kontener na inne elementy</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">span</td>
+                        <td class="html-table__body__definition">niesemantyczny element liniowy, używany często do grupowania tekstu w celu stylizacji</td>
+                    </tr>
+                    <tr class="html-table__body__row">
+                        <td class="html-table__body__element">p</td>
+                        <td class="html-table__body__definition">akapit - część tekstu </td>
+                    </tr>
+                </tbody>
+                </table>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; Aleksandra. Treści są inspirowane uczestnictwem w szkoleniu <em>WTF czyli Co Ten frontend</em>. Źródła wiedzy:
+                <ul class="footer__links-list">
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">MDN</a></li>
+                    <li><a href="http://www.kurshtml.edu.pl/html/kod_poprawny_semantycznie,tekst.html" target="_blank">Kurs HTML i CSS</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS tricks</a></li>
+                    <li><a href="https://the-awwwesomes.gitbooks.io/html-css-step-by-step/content/pl/html-code/html-elements/index.html" target="_blank">The awwwesomes</a></li>
+                    <li><a href="http://webmaster.helion.pl/">Webmaster Helion</a></li>
+                    <li><a href="https://devdocs.io/">Dev Docs</a></li>
+                </ul>
+                <a class="footer__link-to-top" href="#dummy-top">Przejdź do góry strony</a></p>
+                <p class="footer__credentials">Tło strony - Johny Goerend on Unsplash</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body {
+  background: url("images/sky.jpg") no-repeat center fixed;
+  background-size: cover;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.footer {
+  font-size: 12px;
+  padding: 10px 0 0 0;
+  border: dotted;
+  border-width: 4px 0 0 0;
+  border-color: rgba(240, 240, 240, 0.5);
+}
+
+.footer__links-list a {
+  text-decoration: underline;
+  color: #eeeeee;
+}
+
+.footer__link-to-top {
+  color: #eeeeee;
+}
+
+.footer__credentials {
+  font-style: italic;
+  size: 8px;
+  margin: 5px 0 0 0;
+}
+
+.main-heading__title,
+.unit__title,
+.unit-secondary__title,
+.unit-tertiary__title {
+  font-family: "Kalam", cursive;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.navigation-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.navigation-list a {
+  text-decoration: none;
+  font-family: "Kalam", cursive;
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0 15px;
+}
+
+.navigation-list__link--main {
+  text-shadow: 0 0 8px #ffffff;
+  font-weight: bold;
+}
+
+.unit {
+  margin: 0 0 60px 0;
+}
+
+.unit-secondary {
+  margin: 0 0 40px 0;
+}
+
+.unit__paragraph,
+.unit-secondary__paragraph,
+.unit-tertiary__paragraph {
+  line-height: 1.4;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0 20px 0;
+}
+
+.html-table__body {
+  border-spacing: 10px;
+}
+
+.html-table__body__element {
+  font-weight: bold;
+  text-shadow: 0 0 3px #1f8999;
+}
+
+.html-table__body__definition {
+  font-size: 14px;
+}
