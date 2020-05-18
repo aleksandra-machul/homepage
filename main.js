@@ -1,3 +1,1 @@
-/*
 window.alert('Witaj, Przybyszu!');
-*/
